@@ -19,6 +19,8 @@
 		3306DA92CC01AF075285459F /* libPods-NativeComponentExample-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6D203B2436E1D8B0C61D7E /* libPods-NativeComponentExample-tvOSTests.a */; };
 		587BA7F27664995C4469ACF0 /* libPods-NativeComponentExample-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA18271B1F85AC2485CF1DE /* libPods-NativeComponentExample-tvOS.a */; };
 		B9E940818D2B57A28D039695 /* libPods-NativeComponentExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 347B0701B8D06ECF7470408C /* libPods-NativeComponentExampleTests.a */; };
+		CA9C66AB23536E1800EF45D6 /* MapViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9C66AA23536E1800EF45D6 /* MapViewManager.swift */; };
+		CA9C66AD2353718800EF45D6 /* MapViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9C66AC2353718800EF45D6 /* MapViewManager.m */; };
 		DF7838B64456D8FC3C23D7CE /* libPods-NativeComponentExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D40E3481CC3DAB68673384F0 /* libPods-NativeComponentExample.a */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,9 @@
 		7E6D203B2436E1D8B0C61D7E /* libPods-NativeComponentExample-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NativeComponentExample-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEDA2B5E6718027FF784EA02 /* Pods-NativeComponentExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeComponentExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-NativeComponentExampleTests/Pods-NativeComponentExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B2A425E04380CAC94FF8B821 /* Pods-NativeComponentExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeComponentExample.release.xcconfig"; path = "Target Support Files/Pods-NativeComponentExample/Pods-NativeComponentExample.release.xcconfig"; sourceTree = "<group>"; };
+		CA9C66A923536E1800EF45D6 /* NativeComponentExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NativeComponentExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		CA9C66AA23536E1800EF45D6 /* MapViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewManager.swift; sourceTree = "<group>"; };
+		CA9C66AC2353718800EF45D6 /* MapViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewManager.m; sourceTree = "<group>"; };
 		D40E3481CC3DAB68673384F0 /* libPods-NativeComponentExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NativeComponentExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA18271B1F85AC2485CF1DE /* libPods-NativeComponentExample-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NativeComponentExample-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0BDA198840C1AAA17E9F1E4 /* Pods-NativeComponentExample-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeComponentExample-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-NativeComponentExample-tvOSTests/Pods-NativeComponentExample-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +137,9 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				CA9C66AA23536E1800EF45D6 /* MapViewManager.swift */,
+				CA9C66A923536E1800EF45D6 /* NativeComponentExample-Bridging-Header.h */,
+				CA9C66AC2353718800EF45D6 /* MapViewManager.m */,
 			);
 			name = NativeComponentExample;
 			sourceTree = "<group>";
@@ -194,7 +202,6 @@
 				AEDA2B5E6718027FF784EA02 /* Pods-NativeComponentExampleTests.debug.xcconfig */,
 				2F1A706FD7FF2A4723157D75 /* Pods-NativeComponentExampleTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -292,6 +299,9 @@
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1020;
+					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -308,6 +318,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -529,7 +540,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				CA9C66AD2353718800EF45D6 /* MapViewManager.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				CA9C66AB23536E1800EF45D6 /* MapViewManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +595,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AEDA2B5E6718027FF784EA02 /* Pods-NativeComponentExampleTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -605,6 +619,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2F1A706FD7FF2A4723157D75 /* Pods-NativeComponentExampleTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = NativeComponentExampleTests/Info.plist;
@@ -626,6 +641,7 @@
 			baseConfigurationReference = 63EE5396FEF13ED019822CFE /* Pods-NativeComponentExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				INFOPLIST_FILE = NativeComponentExample/Info.plist;
@@ -637,6 +653,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = NativeComponentExample;
+				SWIFT_OBJC_BRIDGING_HEADER = "NativeComponentExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -646,6 +665,7 @@
 			baseConfigurationReference = B2A425E04380CAC94FF8B821 /* Pods-NativeComponentExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = NativeComponentExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -656,6 +676,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = NativeComponentExample;
+				SWIFT_OBJC_BRIDGING_HEADER = "NativeComponentExample-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
